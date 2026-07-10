@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maurício Mello | Android Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header card">
+            <div class="profile-info">
+                <h1>Maurício Mello</h1>
+                <p class="subtitle">Android Developer | Kotlin & Jetpack Compose</p>
+                <div class="location">📍 Brasil</div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" class="btn btn-secondary">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-primary">LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- About Me & Skills -->
+        <div class="grid-2col">
+            <section class="card about">
+                <h2>Sobre Mim 👨‍💻</h2>
+                <p>Sou desenvolvedor Android apaixonado por criar aplicativos nativos modernos, rápidos e elegantes. Meu foco é transformar ideias em códigos limpos, escaláveis e com design centrado na experiência do usuário (UX).</p>
+                <p>Trabalho principalmente com o ecossistema moderno do Google: Kotlin, Jetpack Compose, Room DB e arquitetura reativa com MVVM.</p>
+            </section>
+
+            <section class="card skills">
+                <h2>Minhas Habilidades 🛠️</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">Kotlin</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Jetpack Compose</span>
+                    <span class="skill-tag">Material Design 3</span>
+                    <span class="skill-tag">Room Database</span>
+                    <span class="skill-tag">SQLite</span>
+                    <span class="skill-tag">Coroutines & Flow</span>
+                    <span class="skill-tag">Clean Architecture</span>
+                    <span class="skill-tag">MVVM</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">ADB & Debugging</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Featured Project -->
+        <section class="card project-featured">
+            <div class="project-header">
+                <span class="badge">PROJETO EM DESTAQUE 🚀</span>
+                <h2>Leitor Financeiro Pro</h2>
+                <p class="project-desc">Um gerenciador financeiro reativo e automatizado para Android que lê notificações bancárias em segundo plano.</p>
+            </div>
+            
+            <div class="project-details">
+                <div class="project-features">
+                    <h3>Recursos Implementados:</h3>
+                    <ul>
+                        <li>✨ <strong>Leitura em Background:</strong> Captura automática de notificações financeiras com extração de destinatários/remetentes e prevenção robusta contra transações duplicadas consecutivas.</li>
+                        <li>🔄 <strong>Controle de Reservas:</strong> Módulo de poupança de dinheiro integrado que deduz reservas automaticamente do saldo líquido disponível, com aba de visualização dedicada.</li>
+                        <li>🎨 <strong>UI/UX Bottom-Focused:</strong> Barra de navegação inferior otimizada para uso com o polegar, botão FAB central expandível via <code>ModalBottomSheet</code> e suporte dinâmico a múltiplos temas (Dark e Clean Claro Azul).</li>
+                        <li>📄 <strong>Geração de Comprovantes em PDF:</strong> Exportação de relatórios periódicos em formato A4 e compartilhamento instantâneo de comprovantes individuais formatados com código de autenticação único.</li>
+                        <li>🔍 <strong>Filtros e Busca Instantâneos:</strong> Campo de busca dinâmica acoplado a chips de filtragem temporal (Hoje, Semana, Mês) e dropdown de mapeamento limpo de bancos.</li>
+                        <li>📲 <strong>Atualizações Automáticas:</strong> Sistema nativo de verificação de novas versões conectado a servidor Flask, capaz de baixar e disparar a instalação do novo APK de forma transparente.</li>
+                    </ul>
+                </div>
+
+                <div class="project-tech-stack">
+                    <h3>Stack Tecnológica:</h3>
+                    <div class="tech-tags">
+                        <span>Kotlin</span>
+                        <span>Jetpack Compose</span>
+                        <span>Room Database</span>
+                        <span>Coroutines & Flow</span>
+                        <span>NotificationListener</span>
+                        <span>PDF Document API</span>
+                        <span>HttpURLConnection / JSON</span>
+                        <span>Flask (Auto-Update Server)</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" class="btn btn-primary">Ver Código no GitHub</a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ClinicFlow Project -->
+        <section class="card project-featured">
+            <div class="project-header">
+                <span class="badge" style="background: rgba(13, 148, 136, 0.12); border-color: rgba(13, 148, 136, 0.2); color: #0d9488;">GESTÃO MÉDICA 🩺</span>
+                <h2>ClinicFlow</h2>
+                <p class="project-desc">Um painel integrado de gestão de atendimentos, cirurgias e conciliação inteligente de agenda médica para Android.</p>
+            </div>
+            
+            <div class="project-details">
+                <div class="project-features">
+                    <h3>Recursos Implementados:</h3>
+                    <ul>
+                        <li>📅 <strong>Agenda Mensal Unificada:</strong> Calendário interativo integrado diretamente no painel principal para visualização rápida e reativa dos compromissos diários.</li>
+                        <li>🔄 <strong>Sincronização com Google Agenda:</strong> Integração com a agenda compartilhada do médico via <code>CalendarContract</code>, filtrando apenas compromissos profissionais e ignorando feriados e aniversários automaticamente.</li>
+                        <li>✂️ <strong>Limpeza Automática de Histórico:</strong> Algoritmo inteligente que mantém salvas no banco de dados local apenas as próximas cirurgias agendadas (a partir da data de hoje).</li>
+                        <li>📸 <strong>Relatórios e Anexos de Fotos:</strong> Módulo completo para redigir relatórios clínicos pós-atendimento e anexar imagens do processo (ex: marcações pré-cirúrgicas) com galeria dinâmica e zoom.</li>
+                        <li>📊 <strong>Métricas de Produtividade:</strong> Acompanhamento em tempo real do total de consultas, cirurgias agendadas e quantidade de pacientes únicos no período.</li>
+                    </ul>
+                </div>
+
+                <div class="project-tech-stack">
+                    <h3>Stack Tecnológica:</h3>
+                    <div class="tech-tags">
+                        <span class="tag-teal">Kotlin</span>
+                        <span class="tag-teal">Jetpack Compose</span>
+                        <span class="tag-teal">Coroutines & Flow</span>
+                        <span class="tag-teal">CalendarContract API</span>
+                        <span class="tag-teal">Material Design 3</span>
+                        <span class="tag-teal">MVVM</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" class="btn btn-primary" style="background-color: #0d9488;">Ver Código no GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Portfolio de Maurício Mello • Criado com 💻 e ☕</p>
+        </footer>
+    </div>
+</body>
+</html>
