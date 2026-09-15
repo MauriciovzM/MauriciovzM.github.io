@@ -65,6 +65,6 @@ Player de áudio nativo de alta performance para reprodução de trilhas de back
 
 ## 📈 Contato & Redes
 
-*   **LinkedIn:** [linkedin.com/in/mauriciomello](https://linkedin.com)
+*   **LinkedIn:** [https://www.linkedin.com/in/mauricio-mello-013256327?utm_source=share_via&utm_content=profile&utm_medium=member_android](https://linkedin.com)
 *   **GitHub:** [github.com/MauriciovzM](https://github.com/MauriciovzM)
 *   **E-mail:** [kakau466@gmail.com](mailto:kakau466@gmail.com)
